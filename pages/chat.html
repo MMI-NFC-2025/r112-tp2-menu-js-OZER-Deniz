@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu JS</title>
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="/src/css/components/menu.css" />
+    <link rel="stylesheet" href="/src/css/components/carousel.css">
+    <script type="module" src="/src/js/script.js"></script>
+</head>
+
+<body>
+    <!-- En-tête de la page -->
+    <H1>Chat</H1>
+
+    <header class="header container">
+
+        <div class="header__end">
+
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+                🍔
+            </button>
+
+            <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/index.html">Accueil</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/pages/chien.html">Chien</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/pages/ornithorynque.html">Ornithorynque</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/pages/flamant-rose.html">Flamant Rose</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Fin du menu principal -->
+        </div>
+    </header>
+    <!-- Contenu principal de la page -->
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et est adipisci repellat aliquid, sit commodi facere
+            similique quidem iste sunt accusamus accusantium ab unde dolore quaerat voluptatibus error voluptatem
+            molestiae?
+        </p>
+
+        <div class="carousel" aria-labelledby="carousel-heading">
+            <h2 id="carousel-heading" class="carousel__heading sr-only">
+                Carousel d'images de Chat
+            </h2>
+            <div class="carousel__container" role="region" aria-live="polite">
+                <div id="item-1" class="carousel__item">
+                    <img src="/assests/img/chat-1.webp" alt="Image Chat 1" />
+                </div>
+                <div id="item-2" class="carousel__item">
+                    <img src="/assests/img/chat-2.jpg" alt="Image Chat 2" />
+                </div>
+                <div id="item-3" class="carousel__item">
+                    <img src="/assests/img/chat-3.jpeg" alt="Image Chat 3" />
+                </div>
+                <div id="item-4" class="carousel__item">
+                    <img src="/assests/img/chat-4.webp" alt="Image Chat 4" />
+                </div>
+                <div id="item-5" class="carousel__item">
+                    <img src="/assests/img/chat-5.jpg" alt="Image Chat 5" />
+                </div>
+            </div>
+            <div class="carousel__controls">
+                <button class="carousel__button carousel__button--prev" aria-label="Défiler vers la gauche">
+                    <img src="/assests/icones/icon_arrowcarrousel.svg" alt="fleche gauche" />
+                </button>
+                <button class="carousel__button carousel__button--next" aria-label="Défiler vers la droite">
+                    <img src="/assests/icones/icon_arrowcarrousel.svg" alt="fleche droite" />
+                </button>
+            </div>
+            <ul class="carousel__nav" aria-hidden="false">
+                <li><a href="#item-1">1</a></li>
+                <li><a href="#item-2">2</a></li>
+                <li><a href="#item-3">3</a></li>
+                <li><a href="#item-4">4</a></li>
+                <li><a href="#item-5">5</a></li>
+            </ul>
+        </div>
+    </main>
+    <!-- Fin du contenu principal -->
+
+</body>
+
+</html>
